@@ -1,3 +1,31 @@
-.title {
-
+.layout1 {
+  display: flex;
+  height: 100%;
+  background-color: purple;
+  flex-direction: row;
+}
+.layout1_1 {
+  flex: 0 0 18%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #EAEEE5;
+  font-size: 2rem;
+}
+.layout2 {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+.layout2_1 {
+  flex: 0 0 8%;
+  margin: 0px;
+  background-color: #3E7E55;
+  color: black;
+  font-size: 2rem;
+  box-shadow: 0px 5px 5px 0px #808080;
 }

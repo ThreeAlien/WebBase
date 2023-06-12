@@ -1,24 +1,18 @@
-<div class="homePage">
-  <div class="title">
-    <h1>首頁(可放LOGO)</h1>
+<div class="layout1">
+  <div class="layout1_1">
+      <app-aside></app-aside>
   </div>
-  <div class="body">
-    <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
-      <mat-button-toggle [routerLink]="'/about'" value="red">關於我們</mat-button-toggle>
-      <mat-button-toggle [routerLink]="'/product'" value="green">產品介紹</mat-button-toggle>
-    </mat-button-toggle-group>
-  </div>
-  <div class="footer">
+  <div>
+    <div class="layout2">
+      <div class="layout2_1">
 
+          <app-top></app-top>
+
+      </div>
+      <div>
+        內容
+      </div>
+    </div>
   </div>
 </div>
 
-
-<hr />
-
-<ul>
-  <li><a [routerLink]="'/about'">關於我們</a></li>
-  <li><a [routerLink]="'/product'">產品介紹</a></li>
-</ul>
-
-<router-outlet></router-outlet>
