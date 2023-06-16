@@ -1,16 +1,27 @@
+<!--最外層-->
 <div class="layout1">
-  <div class="layout1_1">
-      <app-aside></app-aside>
+  <!--左側欄-->
+  <div class="aside_left">
+    <app-aside></app-aside>
   </div>
-  <div>
+  <!--右側欄-->
+  <div class="aside_right">
     <div class="layout2">
-      <div class="layout2_1">
-
-          <app-top></app-top>
-
+      <!--上層-->
+      <div class="top">
+        <div class="top_layout">
+          <div class="top_item">
+            <app-top></app-top>
+          </div>
+        </div>
       </div>
-      <div>
-        內容
+      <!--內容-->
+      <div class="content">
+        <div class="content_layout">
+          <div class="content_item">
+            內容
+          </div>
+        </div>
       </div>
     </div>
   </div>

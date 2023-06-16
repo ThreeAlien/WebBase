@@ -1,5 +1,5 @@
-import { AsideComponent } from './about/aside.component';
-import { TopComponent } from './product/top.component';
+import { AsideComponent } from './aside/aside.component';
+import { TopComponent } from './top/top.component';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
