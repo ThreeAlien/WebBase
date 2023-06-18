@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Palanquin Dark', Arial, Helvetica, sans-serif,"Noto Sans TC";
+  font-size: 20px;
+  line-height: 1.4em;
+  color:#414141;
+  letter-spacing:2px;
+  -webkit-text-size-adjust:100%;
+}
+//汎古顏色基底 #EAEEE5 #CADEC8 #AADCB6 #7ABD87 #3E7E55
+@import '~@angular/material/theming';
+
+@include mat-core();
+$mandate-color: (
+  50: #e7ebf0,
+  100: #EAEEE5,
+  200: #9badbf,
+  300: #738ca5,
+  400: #557392,
+  500: #AADCB6, //預設
+  600: #7ABD87,
+  700: #3E7E55,
+  800: #233f62,
+  900: #162e4f,
+  A100: #8bb8ff,
+  A200: #5898ff,
+  A400: #2579ff,
+  A700: #0c69ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+$webBase-primary: mat-palette($mandate-color);
+$webBase-accent: mat-palette($mandate-color,700);
+$webBase-warn: mat-palette($mat-red);
+
+$webBase-theme: mat-light-theme($webBase-primary, $webBase-accent, $webBase-warn);
+
+
+@include angular-material-theme($webBase-theme);

@@ -4,6 +4,10 @@ import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -15,6 +19,10 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
   ]
 })
 export class HomeModule { }

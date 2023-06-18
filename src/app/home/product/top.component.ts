@@ -8,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TopComponent implements OnInit {
 
   constructor() { }
-  loginName = "馮迪索";
-  ngOnInit(): void {
 
+  ngOnInit(): void {
   }
 
 }
