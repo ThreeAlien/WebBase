@@ -8,13 +8,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-
+import { MatListModule } from '@angular/material/list';
+import { ReportManageComponent } from './report-manage/report-manage.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     TopComponent,
-    AsideComponent
+    AsideComponent,
+    ReportManageComponent,
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatListModule,
   ]
 })
 export class HomeModule { }

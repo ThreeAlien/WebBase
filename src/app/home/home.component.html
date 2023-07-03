@@ -2,7 +2,9 @@
   <!--左側欄-->
   <mat-sidenav #sideNav mode="side">
     <div class="aside_left">
-      <app-aside></app-aside>
+      <diV>
+        <app-aside></app-aside>
+      </diV>
     </div>
   </mat-sidenav>
   <mat-sidenav-content style="height: 100vh; width: 100%;">
@@ -22,7 +24,7 @@
       <div class="content">
         <div class="content_layout">
           <div class="{{sideNav.opened ? 'content_item2':'content_item'}}">
-            內容
+            <router-outlet></router-outlet>
           </div>
         </div>
       </div>
