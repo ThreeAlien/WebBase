@@ -10,6 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { ReportManageComponent } from './report-manage/report-manage.component';
+import { ExportComponent } from './report-manage/export/export.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { ReportManageComponent } from './report-manage/report-manage.component';
     TopComponent,
     AsideComponent,
     ReportManageComponent,
+    ExportComponent,
   ],
   imports: [
     CommonModule,
@@ -26,6 +29,7 @@ import { ReportManageComponent } from './report-manage/report-manage.component';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    MatTableModule,
   ]
 })
 export class HomeModule { }

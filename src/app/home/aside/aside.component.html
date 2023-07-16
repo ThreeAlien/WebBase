@@ -1,18 +1,31 @@
-<h3>報表</h3>
-<mat-list>
-  <button mat-button routerLink="./report-manage">
-    <mat-list-item>
-      <mat-icon mat-list-icon>today</mat-icon>
-      <h4 mat-line>報表管理</h4>
-    </mat-list-item>
-  </button>
+<h3>報表管理</h3>
+<mat-list style="display:flex;">
+  <div>
+    <div>
+      <button mat-button routerLink="./report-manage">
+        <mat-list-item>
+          <mat-icon mat-list-icon>today</mat-icon>
+          <h4>範本管理</h4>
+        </mat-list-item>
+      </button>
+    </div>
+    <div>
+      <button mat-button routerLink="./report-manage/export">
+        <mat-list-item>
+          <mat-icon mat-list-icon>today</mat-icon>
+          <h4>匯出</h4>
+        </mat-list-item>
+      </button>
+    </div>
+  </div>
+
 </mat-list>
-<h3>設定</h3>
+<h3>客戶管理</h3>
 <mat-list>
   <button mat-button routerLink="">
     <mat-list-item>
       <mat-icon mat-list-icon>today</mat-icon>
-      <h4 mat-line>報表管理</h4>
+      <h4 mat-line>廠商設定</h4>
     </mat-list-item>
   </button>
 </mat-list>
