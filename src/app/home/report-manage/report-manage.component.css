@@ -1,13 +1,55 @@
-.example-container {
-  height: 85vh;
+/* .container {
+  max-height: 85vh;
+  display: flex;
   width: 77%;
   overflow: auto;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
+  flex-direction: column;
+} */
+.container {
+  position: relative;
+  max-height: 85vh;
+  width: 88%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
-
+.table-container {
+  position: relative;
+  min-height: 200px;
+  max-height: 500px;
+  overflow: auto;
+}
 table {
   width: 100%;
 }
+/* .mat-header-cell.mat-column-accActName {
+  color: red;
+} */
+.mat-cell.mat-column-accActName {
+  font-weight: bold;
+}
+
+.mat-header-cell.mat-column-func {
+  text-align: center;
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  border-color: currentColor;
+}
+
+
+
+.pageFooter {
+
+}
+

@@ -1,3 +1,4 @@
+import { MatSortModule } from '@angular/material/sort';
 import { AsideComponent } from './aside/aside.component';
 import { TopComponent } from './top/top.component';
 import { HomeComponent } from './home.component';
@@ -12,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { ReportManageComponent } from './report-manage/report-manage.component';
 import { ExportComponent } from './report-manage/export/export.component';
 import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatListModule,
     MatTableModule,
+    MatSortModule,
+    MatPaginatorModule
   ]
 })
 export class HomeModule { }
