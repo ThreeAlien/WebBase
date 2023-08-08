@@ -1,31 +1,20 @@
-<h3>報表管理</h3>
 <mat-list style="display:flex;">
-  <div>
-    <div>
-      <button mat-button routerLink="./report-manage">
-        <mat-list-item>
-          <mat-icon mat-list-icon>today</mat-icon>
-          <h4>範本管理</h4>
-        </mat-list-item>
-      </button>
+  <div style="width: 12vw;">
+    <div class="logo">
+      <div style="width: 100px;height: 100px;"></div>
     </div>
-    <div>
-      <button mat-button routerLink="./report-manage/export">
-        <mat-list-item>
-          <mat-icon mat-list-icon>today</mat-icon>
-          <h4>匯出</h4>
-        </mat-list-item>
-      </button>
+    <div style="margin-top: 20px;">
+      <button mat-raised-button [matMenuTriggerFor]="afterMenu" class="btnitemOut">報表設定</button>
+      <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item routerLink="./report-manage" class="btnitemIn" >範本管理</button>
+        <button mat-menu-item routerLink="./report-manage/export" class="btnitemIn">匯出</button>
+      </mat-menu>
+    </div>
+    <div style="margin-top: 3px;">
+      <button mat-raised-button [matMenuTriggerFor]="beforeMenu" class="btnitemOut">客戶管理</button>
+      <mat-menu #beforeMenu="matMenu" xPosition="after">
+        <button mat-menu-item class="btnitemIn">廠商設定</button>
+      </mat-menu>
     </div>
   </div>
-
-</mat-list>
-<h3>客戶管理</h3>
-<mat-list>
-  <button mat-button routerLink="">
-    <mat-list-item>
-      <mat-icon mat-list-icon>today</mat-icon>
-      <h4 mat-line>廠商設定</h4>
-    </mat-list-item>
-  </button>
 </mat-list>

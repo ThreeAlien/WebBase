@@ -1,33 +1,32 @@
-/* .container {
-  max-height: 85vh;
-  display: flex;
-  width: 77%;
-  overflow: auto;
+/**最外層*/
+.layout {
   position: relative;
+  margin-top: 10px;
+  height: auto;
+  width: 93%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
-  flex-direction: column;
-} */
-.container {
-  position: relative;
-  max-height: 85vh;
-  width: 88%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  background-color: #EAEEE5;
 }
+
+/**table 內容*/
 .table-container {
   position: relative;
   min-height: 200px;
   max-height: 500px;
   overflow: auto;
+  border-radius: 10px;
 }
+
 table {
   width: 100%;
 }
+
 /* .mat-header-cell.mat-column-accActName {
-  color: red;
+  color: red; 500: #AADCB6, //預設
+  600: #7ABD87,
+  700: #3E7E55,
 } */
 .mat-cell.mat-column-accActName {
   font-weight: bold;
@@ -37,19 +36,27 @@ table {
   text-align: center;
 }
 
-.mat-mdc-row .mat-mdc-cell {
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
-  cursor: pointer;
+.mat-header-row {
+  background-color: #AADCB6;
 }
+.titleCss{
 
-.mat-mdc-row:hover .mat-mdc-cell {
-  border-color: currentColor;
+  font-size: 18px;
+  letter-spacing: 1.2px;
 }
-
-
-
-.pageFooter {
-
+.top{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #EAEEE5;
+  max-height: 84vh;
+  width: 93%;
 }
-
+.topTitle{
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+.pageFooter{
+  background-color: #EAEEE5;
+}

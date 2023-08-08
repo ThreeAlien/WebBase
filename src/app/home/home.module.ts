@@ -14,7 +14,8 @@ import { ReportManageComponent } from './report-manage/report-manage.component';
 import { ExportComponent } from './report-manage/export/export.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -33,7 +34,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatListModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatMenuModule,
+    MatCardModule
+
   ]
 })
 export class HomeModule { }

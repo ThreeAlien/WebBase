@@ -7,6 +7,7 @@
   font-size: 2rem;
 }
 .layout {
+  z-index:-1;
   display: flex;
   height: 100%;
   width: 100%;
@@ -14,6 +15,7 @@
 }
 .top {
   position: sticky;
+  z-index:100;
   top: 0px;
   flex: 0 0 50px;
   margin: 0px;

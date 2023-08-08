@@ -12,7 +12,7 @@
       <!--上層-->
       <div class="top">
         <div class="top_layout">
-          <button mat-raised-button mat-icon-button color="primary" (click)="toggleSideNav(sideNav)">
+          <button style="margin-top: 5px;" mat-raised-button mat-icon-button color="primary" (click)="toggleSideNav(sideNav)">
             <mat-icon>{{ sideNav.opened ? 'chevron_left' : 'menu' }}</mat-icon>
           </button>
           <div class="{{sideNav.opened ? 'top_item2':'top_item'}}">
