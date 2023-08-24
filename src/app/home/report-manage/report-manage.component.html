@@ -3,6 +3,28 @@
     <mat-card-title class="topTitle">範本管理</mat-card-title>
     <mat-card-subtitle>報表範本設定</mat-card-subtitle>
   </mat-card-header>
+  <mat-card-content>
+    <div style="display: flex;align-items: center;">
+      <div class="qryLable1">
+        <label>帳戶名稱:</label><!--(keyup)="applyFilter($event)"-->
+      </div>
+      <div class="qryLable2">
+        <input class="input" matInput>
+      </div>
+      <div class="qryLable1" style="margin-left: 20px;">
+        <label>範本名稱:</label><!--(keyup)="applyFilter($event)"-->
+      </div>
+      <div class="qryLable2">
+        <input class="input" matInput>
+      </div>
+      <div class="qryLable1" style="margin-left: 20px;">
+        <label>目標廣告:</label><!--(keyup)="applyFilter($event)"-->
+      </div>
+      <div class="qryLable2">
+        <input class="input" matInput>
+      </div>
+    </div>
+  </mat-card-content>
 
   <div>
     <div class="table-container mat-elevation-z8">
