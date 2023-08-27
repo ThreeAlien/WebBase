@@ -1,8 +1,10 @@
 import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { AddRepExmplePopComponent } from './add-rep-exmple-pop/add-rep-exmple-pop.component';
 import { exportSampleManageModels, media } from './report-manage.models';
 
 @Component({
@@ -12,7 +14,7 @@ import { exportSampleManageModels, media } from './report-manage.models';
 })
 export class ReportManageComponent implements OnInit {
 
-  constructor(private _liveAnnouncer: LiveAnnouncer) {};
+  constructor(private _liveAnnouncer: LiveAnnouncer,public dialog: MatDialog) {};
   displayedColumns:string[] = ['accActName', 'exptSampleName', 'goalAds', 'mediaType','creatDt','func'];
   exportSampleData = new MatTableDataSource<exportSampleManageModels>(Data);
   totalCount = 0;
@@ -26,6 +28,18 @@ export class ReportManageComponent implements OnInit {
   ngOnInit(): void {
     this.exportSampleData.paginator = this.paginator;
     this.exportSampleData.sort = this.sort;
+  }
+  addExm(){
+    const dialogRef = this.dialog.open(AddRepExmplePopComponent,{
+      width:"auto",
+      height:"auto",
+      data:null,
+      hasBackdrop: true,
+      disableClose: true
+    })
+    dialogRef.afterClosed().subscribe(async result => {
+      console.log(result);
+    });
   }
   changeSort(sortInfo: Sort) {
     console.log(sortInfo);
