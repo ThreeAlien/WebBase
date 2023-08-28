@@ -16,11 +16,15 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule } from '@angular/material/dialog';
+import {MatRadioModule} from '@angular/material/radio';
+import { AddRepExmplePopComponent } from './report-manage/add-rep-exmple-pop/add-rep-exmple-pop.component';
 @NgModule({
   declarations: [
     HomeComponent,
     TopComponent,
     AsideComponent,
+    AddRepExmplePopComponent,
     ReportManageComponent,
     ExportComponent,
   ],
@@ -36,8 +40,9 @@ import {MatCardModule} from '@angular/material/card';
     MatSortModule,
     MatPaginatorModule,
     MatMenuModule,
-    MatCardModule
-
+    MatCardModule,
+    MatDialogModule,
+    MatRadioModule,
   ]
 })
 export class HomeModule { }

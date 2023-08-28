@@ -2,7 +2,9 @@
   <mat-card-header>
     <mat-card-title class="topTitle">範本管理</mat-card-title>
     <mat-card-subtitle>報表範本設定</mat-card-subtitle>
-    <div><button style="border-radius: 20px;line-height: 1.85em;font-size: 15px;font-style:none;"  mat-raised-button color="primary">新增</button></div>
+    <div>
+      <button class="addBtn" mat-raised-button color="primary" (click)="addExm()">新增</button>
+    </div>
   </mat-card-header>
   <mat-card-content>
     <div style="display: flex;align-items: center;">

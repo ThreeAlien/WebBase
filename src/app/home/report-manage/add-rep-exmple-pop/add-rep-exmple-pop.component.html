@@ -1,1 +1,89 @@
-<p>add-rep-exmple-pop works!</p>
+<div class="header">
+  <div style="float:right; margin-right: -12px;" class="CloseBtn" (click)="onCancel()">
+    <ng-container>
+      <mat-icon>clear</mat-icon>
+    </ng-container>
+  </div>
+</div>
+<div class="Windows">
+  <div class="WindwsDiv">
+    <div class="modal-header" style="margin:0px auto;">
+      <label class="modal-header_Ttitle_label">新增範本</label>
+    </div>
+
+    <div class="modal-body">
+      <div style="margin:0px auto;">
+        <table class="InputTable_S">
+          <tr>
+            <td>
+              <label>媒體選項:</label>
+              <mat-radio-group style="margin-left: 10px;">
+                <mat-radio-button (click)="changeFormType(mediaG)" [value]="mediaG">Google</mat-radio-button>
+                <mat-radio-button (click)="changeFormType(mediaM)"style="margin-left: 20px;" [value]="mediaM">Meta</mat-radio-button>
+              </mat-radio-group>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaG|| mediaType == mediaM">
+            <td>
+              <label>客戶名稱:</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaM">
+            <td>
+              <label>行銷活動(帳戶名稱):</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaM">
+            <td>
+              <label>廣告組合:</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaM">
+            <td>
+              <label>廣告素材:</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaG">
+            <td>
+              <label>帳戶名稱(MCC):</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaG">
+            <td>
+              <label>子帳戶名稱:</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaM">
+            <td>
+              <label>媒體素材</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaG|| mediaType == mediaM">
+            <td>
+              <label>目標廣告:</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaG|| mediaType == mediaM">
+            <td>
+              <label>範本名稱:</label>
+            </td>
+          </tr>
+          <tr *ngIf="mediaType == mediaG|| mediaType == mediaM">
+            <td>
+              <label>選擇欄位:</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="Btn" (click)="onOk()">
+        確認
+      </button>
+      <div style="width: 50px;"></div>
+      <button class="Btn" (click)="onCancel()">
+        取消
+      </button>
+    </div>
+  </div>
+</div>

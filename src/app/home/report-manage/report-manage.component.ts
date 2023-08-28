@@ -31,7 +31,7 @@ export class ReportManageComponent implements OnInit {
   }
   addExm(){
     const dialogRef = this.dialog.open(AddRepExmplePopComponent,{
-      width:"auto",
+      width:"1080px",
       height:"auto",
       data:null,
       hasBackdrop: true,

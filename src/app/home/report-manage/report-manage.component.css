@@ -80,3 +80,9 @@ table {
   border-radius: 4px;
   font-size: 12px;
 }
+.addBtn{
+  border-radius: 20px;
+  line-height: 1.85em;
+  font-size: 15px;
+  font-style:none;
+}
